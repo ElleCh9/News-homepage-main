@@ -5,6 +5,7 @@ ul{
 
 .dropdown-content{
     ul{
+        margin-top: -1rem;
         display: flex;
         flex-direction: row;
     }
@@ -22,7 +23,19 @@ ul{
     }
 }
 @media screen and (max-width:800px){
-
+    .hamburger-nav{
+         
+            border-radius: 20px;
+            background-color: $red;
+            width: 152px;
+            display: block;
+            text-align: center;
+            letter-spacing: 0.2rem;
+        &:after {content: 'Mobile-menu';
+                 color:$off-white;
+                  width:100px;   
+                }
+    }
     .dropdown:hover .dropdown-content{
         display: block;
     }
